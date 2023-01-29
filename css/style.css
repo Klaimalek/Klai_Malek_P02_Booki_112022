@@ -16,13 +16,17 @@ header {
   justify-content: space-between;
   height: 80px;
   width: 100%;
+  padding-top: 30px;
+  padding-right: 30px;
+  
 }
 .header_logo {
   width: 20%;
-  padding-top: 30px;
   padding-left: 30px;
 }
-
+.header_nav{
+width: 25%;
+}
 header img {
   width: 61px;
   height: 20px;
@@ -32,11 +36,11 @@ header img {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
+  justify-content: space-between;
+  align-items: center;
 }
+
 nav li .lien {
-  display: flex;
-  padding: 50px 50px;
-  text-decoration: none;
   color: black;
   font-style: normal;
 }
@@ -45,6 +49,7 @@ nav li .lien {
 }
 nav li a:hover {
   border-top: 3px solid #0065fc;
+  padding: 25px;
 }
 /* css pour la section recherche et filtre*/
 
@@ -72,7 +77,7 @@ nav li a:hover {
   padding-top: 10px;
   border-radius: 15px 0px 0px 15px;
   border: 1px solid #f2f2f2;
-  width: 8%;
+  width: 5%;
 }
 
 .formulaire_recherche {
@@ -188,7 +193,7 @@ nav li a:hover {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
-  margin-top: 40px;
+ 
 }
 .card {
   background-color: #ffffff;
@@ -425,20 +430,21 @@ ul li a {
   }
 
   header {
-    justify-content: center;
-    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    padding-right: 0;
   }
   .header_logo {
-    padding-top: 5px;
+    width: 100%;
+    text-align: center;
   }
   .header_nav {
     width: 100%;
-    padding-top: 0px;
     border-bottom: 3px solid #f2f2f2;
+    padding: 25px;
+    
   }
-  nav li {
-    width: 50%;
-  }
+
 
   .titre_recherche {
     margin-top: 80px;
@@ -446,6 +452,8 @@ ul li a {
   nav li a:hover {
     border-bottom: 3px solid #0065fc;
     border-top: none;
+    width: 100%;
+    
   }
   .fa-magnifying-glass {
     display: inline;
@@ -454,15 +462,18 @@ ul li a {
     width: 50px;
   }
   .icon_recherche {
-    width: 16%;
+    width: 20%;
     display: flex;
     justify-content: center;
-    padding-right: 20px;
+  
   }
-  .input_recherche::placeholder {
-    font-size: 14px;
-    font-weight: 600;
+  .section_recherche{
+    width: 80%;
   }
+  .formulaire_recherche{
+    width: 80%;
+  }
+ 
   .section_filtre {
     flex-direction: column;
     align-items: flex-start;
@@ -477,8 +488,10 @@ ul li a {
     margin: 5px;
     width: 45%;
     text-align: center;
-    padding-top: 5px;
+    padding: 0 0 0 0;
+  
   }
+  
   #bloc_hebergement {
     flex-direction: column-reverse;
   }
